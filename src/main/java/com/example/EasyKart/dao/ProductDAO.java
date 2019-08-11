@@ -1,14 +1,19 @@
 package com.example.EasyKart.dao;
 
 import com.example.EasyKart.entity.Product;
+import com.example.EasyKart.form.ProductForm;
+import com.example.EasyKart.model.ProductInfo;
+import com.example.EasyKart.pagination.PaginationResult;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Propagation;
 
 import javax.persistence.NoResultException;
-import javax.transaction.Transactional;
+import org.springframework.transaction.annotation.Transactional;
+import java.io.IOException;
 import java.util.Date;
 
 @Transactional

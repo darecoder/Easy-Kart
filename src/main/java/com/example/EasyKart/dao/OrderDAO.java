@@ -2,6 +2,9 @@ package com.example.EasyKart.dao;
 
 import com.example.EasyKart.entity.Order;
 import com.example.EasyKart.entity.OrderDetail;
+import com.example.EasyKart.entity.Product;
+import com.example.EasyKart.model.*;
+import com.example.EasyKart.pagination.PaginationResult;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
