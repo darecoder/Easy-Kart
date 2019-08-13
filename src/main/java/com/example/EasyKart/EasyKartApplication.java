@@ -17,10 +17,10 @@ import javax.sql.DataSource;
 import java.util.Properties;
 
 @SpringBootApplication
-//@EnableAutoConfiguration(exclude = { //
-//        DataSourceAutoConfiguration.class, //
-//        DataSourceTransactionManagerAutoConfiguration.class, //
-//        HibernateJpaAutoConfiguration.class })
+@EnableAutoConfiguration(exclude = { //
+        DataSourceAutoConfiguration.class, //
+        DataSourceTransactionManagerAutoConfiguration.class, //
+        HibernateJpaAutoConfiguration.class })
 public class EasyKartApplication {
 
     @Autowired
